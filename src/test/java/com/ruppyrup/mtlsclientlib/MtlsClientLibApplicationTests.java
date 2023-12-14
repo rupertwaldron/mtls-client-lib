@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootTest(
 properties = {
         "mtls.enabled=true",
+        "private-key-passwd=password"
         }
 )
 class MtlsClientLibApplicationTests {

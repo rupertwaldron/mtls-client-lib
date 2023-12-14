@@ -14,7 +14,7 @@ public class MtlsConfiguration {
 
     @Bean("mtlsRestTemplate")
     public RestTemplate mtlsRestTemplate(RestTemplateBuilder restTemplateBuilder, SslBundles sslBundles) {
-        return restTemplateBuilder.setSslBundle(sslBundles.getBundle("emoji-api")).build();
+        return restTemplateBuilder.setSslBundle(sslBundles.getBundle("consumer-mtls")).build();
     }
 
 }

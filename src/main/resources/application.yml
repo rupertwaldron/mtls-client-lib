@@ -2,10 +2,10 @@ spring:
   ssl:
     bundle:
       pem:
-        emoji-api:
+        consumer-mtls:
           keystore:
-            certificate: "classpath:emojiclientcertlocal.pem"
-            private-key: "classpath:client-private-key.pem"
-            private-key-password: "password"
+            certificate: "classpath:consumercert.pem"
+            private-key: "classpath:consumer-private-key.pem"
+            private-key-password: ${private-key-passwd}
           truststore:
-            certificate: "classpath:emojiapicertlocal.pem"
+            certificate: "classpath:apicert.pem"
